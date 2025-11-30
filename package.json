@@ -17,6 +17,8 @@
     "start:dev": "nest start --watch",
     "start:debug": "nest start --debug --watch",
     "start:prod": "node dist/main",
+    "dev:frontend": "cd frontend && npm run dev",
+    "dev:all": "npm run start:dev & npm run dev:frontend",
     "lint": "eslint \"src/**/*.ts\" \"test/**/*.ts\" --fix",
     "test": "jest",
     "test:watch": "jest --watch",
