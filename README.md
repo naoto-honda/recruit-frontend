@@ -34,7 +34,9 @@ npm run migration:run
 
 #### バックエンドサーバーの起動（別ターミナル）
 
-npm run start:devバックエンドは `http://localhost:3000` で起動します。
+npm run start:dev
+
+バックエンドは `http://localhost:3000` で起動します。
 
 ### 3. フロントエンドのセットアップ
 
@@ -48,7 +50,9 @@ npm install
 
 #### 開発サーバーの起動
 
-npm run devフロントエンドは `http://localhost:5173` で起動します。
+npm run dev
+
+フロントエンドは `http://localhost:5173` で起動します。
 
 ### 4. 動作確認
 
@@ -126,7 +130,7 @@ npm run test:ui
 ### 設計思想
 
 - **コンポーネント化**: 再利用可能なコンポーネント（Button, Icon, Footer等）を作成し、保守性を向上
-- **カスタムフック**: データ取得・更新ロジックを`useContent`と`useContentList`に分離し、ロジックとUIを分離
+- **カスタムフック**: データ取得・更新ロジックを`useContent.ts`にまとめた
 - **型安全性**: TypeScriptを活用して型安全性を確保し、実行時エラーを削減
 - **レスポンシブデザイン**: モバイルファーストで実装し、タブレット・デスクトップにも対応
 
@@ -155,7 +159,6 @@ frontend/
 │ ├── setup.ts # テストセットアップ
 │ ├── validation.test.ts
 │ ├── contentService.test.ts
-│ ├── useContent.test.ts
 │ └── PageEditor.test.tsx
 ├── public/ # 静的ファイル
 │ └── img/icon/ # アイコン画像
