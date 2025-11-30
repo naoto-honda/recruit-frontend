@@ -72,10 +72,6 @@ npm run test -- --run
 
 npm run test:ui
 
-#### テストカバレッジの確認
-
-npm run test:coverage
-
 ## 技術スタック
 
 ### フロントエンド
